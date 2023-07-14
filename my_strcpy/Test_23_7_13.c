@@ -2,11 +2,11 @@
 #include<stdio.h>
 #include<assert.h>
 
-//·½·¨Ò»£º
+//æ–¹æ³•ä¸€ï¼š
 
 //void my_strcpy(char* dest, char* src)
 //{
-//	//ÓÅ»¯Ç°:
+//	//ä¼˜åŒ–å‰:
 //	/*while (*src != '\0')
 //	{
 //		*dest = *src;
@@ -15,7 +15,7 @@
 //
 //	}
 //	*dest = *src;//'\0'*/
-//   //ÓÅ»¯ºó:
+//   //ä¼˜åŒ–å:
 //	assert(dest != NULL);
 //	assert(src != NULL);
 //	while (*dest++ = *src++)
@@ -26,21 +26,21 @@
 //int main()
 //{
 //	//strcpy
-//	//×Ö·û´®¿½±´
+//	//å­—ç¬¦ä¸²æ‹·è´
 //	char arr1[] = "#############";
 //	char arr2[] = "bit";
 //	my_strcpy(arr1, NULL);
 //	printf("%s", arr1);
 //	return 0;
 //}
-//·½·¨¶ş£º
-char* my_strcpy(char* dest,const char* src)//const ·ÀÖ¹*src±»ĞŞ¸Ä
+//æ–¹æ³•äºŒï¼š
+char* my_strcpy(char* dest,const char* src)//const é˜²æ­¢*srcè¢«ä¿®æ”¹
 	{
 	
 	char* ret = dest;
-	assert(dest != NULL);//¶ÏÑÔ
-	assert(src != NULL);//¶ÏÑÔ
-	//°Ñ×Ö·û´®srcµÄÄÚÈİ¿½±´µ½×Ö·û´®destÖ¸ÏòµÄ¿Õ¼ä£¬°üº¬'\0';
+	assert(dest != NULL);//æ–­è¨€
+	assert(src != NULL);//æ–­è¨€
+	//æŠŠå­—ç¬¦ä¸²srcçš„å†…å®¹æ‹·è´åˆ°å­—ç¬¦ä¸²destæŒ‡å‘çš„ç©ºé—´ï¼ŒåŒ…å«'\0';
 	while (*dest++=*src++)
 	{
 		;
@@ -50,9 +50,9 @@ char* my_strcpy(char* dest,const char* src)//const ·ÀÖ¹*src±»ĞŞ¸Ä
 int main()
 {
 	//strcpy
-	//×Ö·û´®¿½±´
+	//å­—ç¬¦ä¸²æ‹·è´
 	char arr1[] = "##########";
 	char arr2[] = "bit";
-	printf("%s",my_strcpy(arr1, arr2));//Á´Ê½·ÃÎÊ
+	printf("%s",my_strcpy(arr1, arr2));//é“¾å¼è®¿é—®
 	return 0;
 }
